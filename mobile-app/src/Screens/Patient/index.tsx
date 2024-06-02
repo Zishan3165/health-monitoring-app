@@ -17,20 +17,6 @@ const PatientHomePage = ({ navigation }: PatientPageProps) => {
    const Drawer = createDrawerNavigator<RootStackParamList>();
    const { removeUserDetails } = useContext(MyContext);
 
-   // const createAlarmNewAlarm = async () => {
-   //    try {
-   //       await createAlarm({
-   //          active: false,
-   //          date: new Date().toISOString(),
-   //          message: 'message',
-   //          snooze: 1,
-   //       });
-   //    } catch (e) {}
-   // };
-
-   // useEffect(() => {
-   //    createAlarmNewAlarm();
-   // }, []);
    return (
       <Drawer.Navigator
          initialRouteName="HealthLog"
